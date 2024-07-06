@@ -1,0 +1,11 @@
+### Check
+GET localhost:8080/api/check
+Content-Type: application/json
+
+### Create User sera4
+GET localhost:8080/api/sera4/create/user
+Content-Type: application/json
+
+//{
+//  "name": "Thiago Pereira dos Santos"
+//}
