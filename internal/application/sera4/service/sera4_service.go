@@ -3,6 +3,7 @@ package service
 import (
 	"integrations_apis/internal/application/sera4/dto"
 	"integrations_apis/internal/application/sera4/usecase"
+	"log"
 	"net/http"
 	"os"
 )
@@ -55,7 +56,8 @@ func (s *Sera4Service) GetUser(id string) (map[string]interface{}, error) {
 	if err != nil {
 		return nil, err
 	}
-
+	log.Println(id)
+	log.Println(user)
 	return user, nil
 }
 
